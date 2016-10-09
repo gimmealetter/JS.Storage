@@ -1,0 +1,2 @@
+# JS.Storage
+data manager
