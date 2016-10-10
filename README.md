@@ -15,7 +15,7 @@ The way to do it is simple as this!
 
 #Installation
 
-	Just include script
+Just include script
 
 	<script src="/path/to/km.storage.lastest.js"></script>
 
@@ -32,7 +32,7 @@ setsep: seperator for depth. default is '.'. if arguments is null return current
 #Usage
 
 Create new instance of kmStorage
-{
+
 	var tmp = {
 		foo: 'foo',
 		bar: 'bar',
@@ -43,33 +43,32 @@ Create new instance of kmStorage
 		myarray: ['firstindex',2,'third index but realindex is 2']
 	}
 	var data = new kmStorage(tmp);
-}
 
 
 Get data from object
-{
+
 	data.get('foo'); // return 'foo'
 	data.get('mydata.name'); // return 'my name is kmStorage'
 	data.get('myarray.2'); // return 'third index but realindex is 2'
 
 	data.get(); // call get without arguments return all saved data
-}
+
 
 
 Set data to object
-{
+
 	data.set('foo','new foo'); // return 'new foo'
 	data.set('mydata.groupname','Km-Studio'); // return 'Km-Studio'
-}
+
 
 Unset data to object
-{
+
 	data.unset('bar');
 	data.unset('myarray.1');
-}
 
-Now data`s data is
-{
+
+Now data\`s data is
+
 	tmp = {
 		foo: 'new foo',
 		mydata: {
@@ -81,28 +80,28 @@ Now data`s data is
 	}
 
 	* myarray.length still 3, but index 1(zero-based) is undeinfed
-}
+
 data's data cloned deep. when data's data is changed origin data is not changed.
 
 Check if exsits some propery from object
-{
+
 	data.isDefined('foo'); // return true
 	data.isDefined('bar'); // return false
 	data.isDefined('mydata.name'); // return true
 	data.isDefined('yourdata.name'); // return false
-}
+
 
 Simply use without create new instance
-{
+
 	kmStorage.get(tmp,'foo'); // return 'new foo'
 	kmStorage.get(tmp, 'mydata.name'); // return 'my name is kmStorage'
-}
+
 
 Or You can get property of window object
-{
+
 	kmStorage.get(window,'location');
 	kmStorage.get('window.location');
 	kmStorage.get('location');
 
 	* all commands return window.location
-}
+
