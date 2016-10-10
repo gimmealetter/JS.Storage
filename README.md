@@ -84,7 +84,7 @@ Now data\`s data is
 		myarray: ['firstindex','third index but realindex is 2']
 	}
 
-	* myarray.length still 3, but index 1(zero-based) is undeinfed
+	* myarray.length still 3, but index 1(zero-based) is undefined
 
 data's data cloned deep. when data's data is changed origin data is not changed.
 
