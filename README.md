@@ -6,12 +6,12 @@ data manager
 
 When you create a project using javascript, you often need to check if the object exists.<br/>
 If you work without checking then often error will occur with these messages.<br/>
-	‘ReferenceError: `object` is not defined’ or ‘TypeError: Cannot read property 'property' of undefined’<br/>
+       ‘ReferenceError: 'object' is not defined’ or ‘TypeError: Cannot read property 'property' of undefined’<br/>
 Checking if object exists is simple. Such as ‘key’ in object or Function.hasOwnProperty(‘key’).<br/>
 However, if you want to check if the object exists in multiple depth, it becomes a chaos. First you have to check if first object exists and check the second depth object and so on…<br/>
 kmStorage will check if the object exists using depth identifier string. It can even check global window variable!!<br/>
 The way to do it is simple as this!<br/>
-   kmStorage.isDefined('window.document.location.hostname')
+        kmStorage.isDefined('window.document.location.hostname')
 
 #Installation
 
@@ -31,7 +31,7 @@ setsep: seperator for depth. default is '.'. if arguments is null return current
 
 #Usage
 
-Create new instance of kmStorage
+<b>Create new instance of kmStorage</b>
 
 	var tmp = {
 		foo: 'foo',
@@ -45,7 +45,7 @@ Create new instance of kmStorage
 	var data = new kmStorage(tmp);
 
 
-Method : get<br/>
+<b>Method : get</b><br/>
 Get data from object
 
 	data.get('foo'); // return 'foo'
@@ -55,14 +55,14 @@ Get data from object
 	data.get(); // call get without arguments return all saved data
 
 
-Method : set<br/>
+<b>Method : set</b><br/>
 Set data to object
 
 	data.set('foo','new foo'); // return 'new foo'
 	data.set('mydata.groupname','Km-Studio'); // return 'Km-Studio'
 
 
-Method : unset<br/>
+<b>Method : unset</b><br/>
 Unset data to object
 
 	data.unset('bar');
@@ -86,7 +86,7 @@ Now data\`s data is
 data's data cloned deep. when data's data is changed origin data is not changed.
 
 
-Method : isDefinedt<br/>
+<b>Method : isDefined</b><br/>
 Check if exsits some propery from object
 
 	data.isDefined('foo'); // return true
