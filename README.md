@@ -66,7 +66,7 @@ Set data to object
 
 
 <b>Method : unset</b><br/>
-Unset data to object
+Unset data from object
 
 	data.unset('bar');
 	data.unset('myarray.1');
@@ -90,7 +90,7 @@ data's data cloned deep. when data's data is changed origin data is not changed.
 
 
 <b>Method : isDefined</b><br/>
-Check if exsits some propery from object
+Check if exsits some propery of object
 
 	data.isDefined('foo'); // return true
 	data.isDefined('bar'); // return false
