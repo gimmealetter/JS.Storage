@@ -74,7 +74,7 @@ Unset data from object
 
 Now data\`s data is
 
-	tmp = {
+	{
 		foo: 'new foo',
 		mydata: {
 			name: 'my name is kmStorage',
