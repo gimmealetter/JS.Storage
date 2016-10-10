@@ -6,12 +6,15 @@ data manager
 
 When you create a project using javascript, you often need to check if the object exists.<br/>
 If you work without checking then often error will occur with these messages.<br/>
-       ‘ReferenceError: 'object' is not defined’ or ‘TypeError: Cannot read property 'property' of undefined’<br/>
+      
+	‘ReferenceError: `object` is not defined’ or ‘TypeError: Cannot read property 'property' of undefined’
+	
 Checking if object exists is simple. Such as ‘key’ in object or Function.hasOwnProperty(‘key’).<br/>
 However, if you want to check if the object exists in multiple depth, it becomes a chaos. First you have to check if first object exists and check the second depth object and so on…<br/>
 kmStorage will check if the object exists using depth identifier string. It can even check global window variable!!<br/>
 The way to do it is simple as this!<br/>
-        kmStorage.isDefined('window.document.location.hostname')
+	
+	kmStorage.isDefined('window.document.location.hostname')
 
 #Installation
 
