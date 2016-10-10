@@ -100,7 +100,7 @@ Check if exsits some propery of object
 
 Simply use without create new instance
 
-	kmStorage.get(tmp,'foo'); // return 'new foo'
+	kmStorage.get(tmp,'foo'); // return 'foo'
 	kmStorage.get(tmp, 'mydata.name'); // return 'my name is kmStorage'
 
 
