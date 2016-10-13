@@ -14,7 +14,7 @@ However, if you want to check if the object exists in multiple depth, it becomes
 kmStorage will check if the object exists using depth identifier string. It can even check global window variable!!<br/>
 The way to do it is simple as this!<br/>
 	
-	kmStorage.isDefined('window.document.location.hostname')
+	KMStorage.isDefined('window.document.location.hostname')
 
 #Installation
 
@@ -34,7 +34,7 @@ setsep: seperator for depth. default is '.'. if arguments is null return current
 
 #Usage
 
-<b>Create new instance of kmStorage</b>
+<b>Create new instance of KMStorage</b>
 
 	var tmp = {
 		foo: 'foo',
@@ -45,7 +45,7 @@ setsep: seperator for depth. default is '.'. if arguments is null return current
 		},
 		myarray: ['firstindex',2,'third index but realindex is 2']
 	}
-	var data = new kmStorage(tmp);
+	var data = new KMStorage(tmp);
 
 
 <b>Method : get</b><br/>
@@ -100,15 +100,15 @@ Check if exsits some propery of object
 
 Simply use without create new instance
 
-	kmStorage.get(tmp,'foo'); // return 'foo'
-	kmStorage.get(tmp, 'mydata.name'); // return 'my name is kmStorage'
+	KMStorage.get(tmp,'foo'); // return 'foo'
+	KMStorage.get(tmp, 'mydata.name'); // return 'my name is kmStorage'
 
 
 Or You can get property of window object
 
-	kmStorage.get(window,'location');
-	kmStorage.get('window.location');
-	kmStorage.get('location');
+	KMStorage.get(window,'location');
+	KMStorage.get('window.location');
+	KMStorage.get('location');
 
 	* all commands return window.location
 
