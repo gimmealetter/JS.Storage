@@ -112,3 +112,10 @@ Or You can get property of window object
 
 	* all commands return window.location
 
+
+<b>Updates</b><br/>
+	1.1.0
+	
+	1. Added flag for deep reference.
+	var deepdata = new KMStorage([true, ]tmp); // After change deepdata, `tmp` will be changed as 	deepdata`s data.
+	2.Separate from km`s core libarary and load km core if there is not ready km`s core library.
